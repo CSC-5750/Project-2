@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .stats p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Puzzle Board Styling */
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  td {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    border-radius: 5px;
+    /* For tiles with images, ensure the image covers the cell */
+    background-size: 320px 320px;
+  }
+  
+  td:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Blank tile styling */
+  .blank {
+    background: #fff;
+    border: 2px solid transparent;
+    cursor: default;
+  }
+  
+  /* Button Styling */
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    background: linear-gradient(120deg, #28a745, #218838);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(120deg, #218838, #1e7e34);
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    td {
+      width: 60px;
+      height: 60px;
+      font-size: 18px;
+      background-size: 240px 240px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  }
+  
